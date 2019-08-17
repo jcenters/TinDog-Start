@@ -1,11 +1,52 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-#title {
+p {
+    color: #8f8f8f;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+.big-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers  */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections  */
+
+.colored-section {
     background-color: #ff4c68;
     color: #fff;
 }
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Navbar */
 
 .navbar {
     padding: 0 0 4.5rem;
@@ -26,25 +67,11 @@ body {
     font-weight: 300;
 }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 1.5;
-}
+/* Title Section */
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.container-fluid {
+#title.container-fluid {
     padding: 3% 15% 7%;
+    text-align: left;
 }
 
 .download-button {
@@ -61,7 +88,6 @@ h3 {
 /* Features Section */
 
 #features {
-    background-color: #fff;
     position: relative;
 }
 
@@ -74,17 +100,15 @@ h3 {
     color: #ff4c68;
 }
 
-.brags {
-    color: #8f8f8f;
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Testimonial Section  */
 
 #testimonials {
     background-color: #ef8172;
-    color: #fff;
-    padding: 7% 15%;
-    text-align: center;
 }
 
 .testimonial-image {
@@ -93,10 +117,15 @@ h3 {
     width: 10%;
 }
 
+.testimonial-text {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+/* Press Section */
+
 #press {
     background-color: #ef8172;
-    padding-bottom: 3%;
-    text-align: center;
 }
 
 .press-logo {
@@ -105,15 +134,10 @@ h3 {
 
 /* Carousel Section */
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* Pricing Section */
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column {
@@ -121,29 +145,13 @@ h3 {
 
 }
 
-/* Call to Action Section */
-
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-    padding: 5% 10% 2%;
-    text-align: center;
-}
-
-.cta-header {
+.price-text {
     font-size: 3rem;
+    font-weight: bold;
     line-height: 1.5;
-    padding-bottom: 2%;
 }
 
 /* Footer Section */
-
-#footer {
-    background-color: #fff;
-    color: #8f8f8f;
-    padding: 5%;
-    text-align: center;
-}
 
 .footer-icon {
     color: black;
@@ -152,7 +160,7 @@ h3 {
 
 @media screen and (max-width: 1000px) {
 
-    #title {
+    #title.container-fluid {
         text-align: center;
     }
 
